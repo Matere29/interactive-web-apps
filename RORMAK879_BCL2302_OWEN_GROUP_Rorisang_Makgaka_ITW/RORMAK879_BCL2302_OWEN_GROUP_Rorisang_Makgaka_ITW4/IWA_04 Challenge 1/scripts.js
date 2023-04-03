@@ -1,5 +1,6 @@
-let date= 2050
-const status= 'parent'
+//corrected variables declaration
+let date = 2050
+const status= 'student'
 let count = 0
 
 if (date = 2050) {
@@ -8,8 +9,10 @@ if (date = 2050) {
 	date = 'April'
 	console.log(date, 'Family Day')
 	console.log(date, 'Freedom Day')
+	//I removed "let" since count is declared as global variable
 	count = count + 4
 
+	//fixed comparison notation
 	if (status === "student") {
 	  console.log('June', 'Youth Day')
 	 count = count + 1
@@ -19,6 +22,7 @@ if (date = 2050) {
 	console.log('September', 'Heritage Day')
 	date = 'December'
 	console.log(date, 'Day of Reconciliation')
+	//removed let
 	count = count + 3
 
 	if (status === "parent") {
@@ -27,6 +31,7 @@ if (date = 2050) {
   }
 
 	console.log(date, 'Day of Goodwill')
+	//removed let
 	count = count + 1
 }
 date= 2050
