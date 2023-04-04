@@ -1,3 +1,4 @@
+/*
 let x = '*'
 
 const y = x + x
@@ -13,3 +14,16 @@ console.log(h)
 console.log(" " + x +" ") 
 console.log(" " + x +" ")
 console.log(h) 
+*/
+
+let number = 1;
+let x = '*';
+
+while(number <= 4){
+   console.log(number);
+   number = number + 1;
+   console.log(x);
+   x = x + 1;
+   
+    
+}
