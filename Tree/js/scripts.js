@@ -3,10 +3,9 @@ let number = 1;
 let x = '*';
 
 
-while(number <= 4){
-  number = number + 1;
-
-  console.log('*');
+while(number <= 10 ){
+  console.log(number);
+  number++;
   
   
 }

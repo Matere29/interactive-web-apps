@@ -4,7 +4,7 @@ const NONE_SELECTED = 0
 
 
 /* let customers = '1'; */
-let location = 'RSA';
+let location1 = 'RSA';
 let currency = 'R';
 let shipping = 0;
 
@@ -15,12 +15,14 @@ const batteries = 35 * 2;
 const pens = 5 * NONE_SELECTED; 
 
 
-if (location === 'RSA') { 
+
+if (location1 === 'RSA') { 
     shipping = 400 
     currency == 'R';
+    
  }
 
-else if (location === 'NAM'){
+else if (location1 === 'NAM'){
     shipping = 600 
     currency='$'
 }
@@ -46,7 +48,7 @@ else {
     console.log(WARNING) 
 }
  */
-if (location === "NK"){
+if (location1 === "NK"){
     console.log(BANNED_WARNIN)
 }
 else{
