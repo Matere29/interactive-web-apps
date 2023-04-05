@@ -1,6 +1,6 @@
 //corrected variables declaration
 let date = 2050;
-let status= 'parent';
+let status= ['parent','student'];
 let count = 0;
 
 if (date == 2050) {
