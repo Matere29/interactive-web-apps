@@ -30,10 +30,10 @@ const STATUS_MAP = {
 // Edit below line 
 
 
-const statusElements = document.querySelector('.status')
-const reserveButtons = document.querySelector('.reserve')
-const checkoutButtons = document.querySelector('.checkout')
-const checkinButtons = document.querySelector('.checkin')
+const statusElements = document.querySelectorAll('.status')
+const reserveButtons = document.querySelectorAll('.reserve')
+const checkoutButtons = document.querySelectorAll('.checkout')
+const checkinButtons = document.querySelectorAll('.checkin')
 
 for(i = 0 ; i<statusElements.length; i++) {
     const status = statusElements[i].textContent.trim();
