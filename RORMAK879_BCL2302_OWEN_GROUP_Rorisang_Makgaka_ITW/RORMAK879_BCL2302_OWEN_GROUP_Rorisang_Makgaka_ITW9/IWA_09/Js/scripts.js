@@ -30,8 +30,12 @@ const rent = {
 
 // You can change below however you want
 
-const taxAsDecimal = tax[913] / 100
-const startingAfterTax = salary * 1 - taxAsDecimal
-const type = lodging + size
-const balance = expenses(transport) - expenses(food) - expenses(rent.type) 
-console.log(balance)
+//changed a string to a number and multiplied by salary to get tax amount
+const taxAsDecimal = parseInt(tax[913]) / '100' * salary ;
+//Calculate salary after deducting tax amount.
+const startingAfterTax = salary * 1 - taxAsDecimal;
+//concatinating two strings
+const type = lodging +" "+ size;
+//fixed this equation by subtracting expenses from new Salary(Salary without tax)
+const balance = (startingAfterTax - expenses.transport - expenses.food - rent["large-apartment"]).toFixed(2);
+console.log('R',balance,type);

@@ -1,11 +1,11 @@
-const nickname= 'Timmy';
-const firstname = 'Timothy';
+const nickname= null;
+const firstname = null;
 
 /*I used if statements to check for nickname and display message
 * If nickname is null, display firstname and if both are null display Good Morning
 */
 
-
+/*
 if(nickname){
  console.log("Good morning!",nickname)
 }else if(firstname){
@@ -13,7 +13,7 @@ if(nickname){
 }else{
     console.log("Good morning!")
 }
+*/
 
 
-
-//console.log("Good Morning, ${nickname} || {firstname}!")
+console.log(`Good Morning, ${nickname || firstname}!`)

@@ -8,13 +8,14 @@ shirts = 150 * NONE_SELECTED
 batteries = 35 * 2
 pens = 5 * NONE_SELECTED 
 
-shipping = 400
+shipping = 600
 currency = 'R'
 customers = 1
 location1 = 'RSA'
 
-
+//Checks number of customers
 if (shipping === 0  && customers !== 1) { console.log(NONE_SELECTED) }
+//Checks location
 if(location1 === 'NK' ){ console.log(BANNED_WARNIN) }
 
 if (location1 === 'RSA') { shipping === 400 && currency === 'R' }

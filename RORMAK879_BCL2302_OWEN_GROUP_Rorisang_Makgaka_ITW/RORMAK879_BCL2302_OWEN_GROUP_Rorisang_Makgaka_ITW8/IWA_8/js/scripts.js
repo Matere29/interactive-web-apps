@@ -38,5 +38,5 @@ const sarah = {
 	}
 }
 //Changed code to display address for Leo and Sarah
-console.log(leo.address.street, leo.address.postalCode)
-console.log(sarah.address.street, sarah.address.postalCode)
+console.log(leo,leo.address.street, leo.address.postalCode)
+console.log(sarah,sarah.address.street, sarah.address.postalCode)
