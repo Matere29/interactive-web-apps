@@ -7,7 +7,7 @@ Numbers generated can not be higher then the value of 45 or equal 0. Ensure rest
 Enjoy the Code
 */
 const array = [];
-const message1 = 'number selected matches, you WON!!!!!!'
+const message1 = 'Number selected matches, you WON!!!!!!'
 const message2 = 'No matches, You LOST!!!!!!'
 let number = prompt("Enter number between 1 and 45");
 if (number<1 || number>49)
