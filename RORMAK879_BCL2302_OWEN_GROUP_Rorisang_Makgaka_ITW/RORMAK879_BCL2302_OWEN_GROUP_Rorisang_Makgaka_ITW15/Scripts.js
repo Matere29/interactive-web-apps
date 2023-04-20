@@ -8,11 +8,29 @@ const data = {
 
 // Only edit below
 
-const { first = 1 } = data.first || {}
-const { second = 1 } = data.second || {}
-const { third = 1 } = data.third || {}
+const  first =  data.lists.first[0][0]
+const second =  data.lists.second[1][0]
+const  third = data.second.third[2][0]
 
+//distructuring an array of objects
 //const { lists: [[, first], [, second], [, third]] } = data;
+const result = []
+
+const extractBiggest = () => {
+	//access the last array using first.length - 1 array
+	if (first[first.length-1] > second[second.length-1]) {
+		return lists.first
+	}
+
+	if (third[0] < 1) {
+		return second
+	}
+	
+	return third
+}
+
+/*
+
 const result = []
 
 const extractBiggest = () => {
@@ -26,7 +44,7 @@ const extractBiggest = () => {
 	
 	return first;
 }
-
+*/
 // Only edit above
 
 result.push(extractBiggest())

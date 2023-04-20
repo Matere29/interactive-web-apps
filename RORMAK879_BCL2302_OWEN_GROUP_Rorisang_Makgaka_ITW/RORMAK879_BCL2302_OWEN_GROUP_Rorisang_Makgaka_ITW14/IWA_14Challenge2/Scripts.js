@@ -1,17 +1,16 @@
 // script.js
 
 //declared a function correctly
-function add(a, b) {
-	return a + b;
-  }
+const add = (a, b) => a + b;
+  
   //declared a function correctly and fixed the return statement, to return product
-  function multiply(a, b) {
+const multiply = (a, b) {
 	return a * b;
   }
   
   function internal() {
 	const added = this.add(this.internal.a, this.internal.b);
-	const multiplied = this.multiply(this.internal.a, this.internal.b);
+	//const multiplied = this.multiply(this.internal.a, this.internal.b);
 	console.log(added * this.internal.c);
 	return this;
 }
@@ -39,5 +38,6 @@ function add(a, b) {
 	calculate: internal,
   };
   
-  
+example1.calculate()
+example2.calculate()
   
