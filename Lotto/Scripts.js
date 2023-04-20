@@ -7,21 +7,23 @@ Numbers generated can not be higher then the value of 45 or equal 0. Ensure rest
 Enjoy the Code
 */
 const array = [];
+const message1 = 'number selected matches, you WON!!!!!!'
+const message2 = 'No matches, You LOST!!!!!!'
 let number = prompt("Enter number between 1 and 45");
 if (number<1 || number>49)
 {
     alert("Number must be between 1 and 45");
     number = prompt("Enter number between 1 and 45");
 }
-alert("User selected: " + number);
+document.getElementById("number").innerHTML = number;
 
 
 for (let x = 0; x < 6; x++)
 array.push((Math.random() * 45).toFixed(0));
-console.log('Draw numbers:',array);
+document.getElementById("Lotto").innerHTML = array;
 
 if(array.includes(number)){
-   alert("number selected matches, you WON!!!!!!")
+document.getElementById("message").innerHTML = message1;
 }else{
-    alert("No matches, You LOST!!!!!!")   
+    document.getElementById("message").innerHTML = message2;
 }
