@@ -7,17 +7,17 @@ Numbers generated can not be higher then the value of 45 or equal 0. Ensure rest
 Enjoy the Code
 */
 const array = [];
-let number = prompt("Enter number between 0 and 49");
+let number = prompt("Enter number between 0 and 45");
 if (number<0 || number>49)
 {
-    alert("Number must be between 0 and 49");
-    number = prompt("Enter number between 0 and 49");
+    alert("Number must be between 0 and 45");
+    number = prompt("Enter number between 0 and 45");
 }
 console.log("User selected: " + number);
 
-//let x = (Math.random() * 49).toFixed(0)
+//let x = (Math.random() * 45).toFixed(0)
 for (let x = 0; x < 6; x++)
-array.push((Math.random() * 49).toFixed(0));
+array.push((Math.random() * 45).toFixed(0));
 console.log('Draw numbers:',array);
 
 if(array.includes(number)){

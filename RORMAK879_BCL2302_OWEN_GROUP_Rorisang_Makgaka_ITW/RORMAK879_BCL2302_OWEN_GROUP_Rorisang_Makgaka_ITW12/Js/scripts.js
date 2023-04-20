@@ -35,6 +35,30 @@ const reserveButtons = document.querySelectorAll('.reserve')
 const checkoutButtons = document.querySelectorAll('.checkout')
 const checkinButtons = document.querySelectorAll('.checkin')
 
+const buttons = document.querySelectorAll('.button')
+buttons.forEach(button => {
+    button.removeEventListener('click', () =>{
+    
+    })
+})
+/*
+statusElements.addEventListener('click', e => {
+    console.log('Check');
+  statusElements.removeEventListener('click', e =>{
+
+  
+});
+reserveButtons.addEventListener('click', e => {
+    console.log('Check');
+});
+checkinButtons.addEventListener('click', e => {
+    console.log('Check');
+});
+checkinButtons.addEventListener('click', e => {
+    console.log('Check');
+});
+*/
+
 for(i = 0 ; i<statusElements.length; i++) {
     const status = statusElements[i].textContent.trim();
     const statusInfo = STATUS_MAP[status];

@@ -1,15 +1,17 @@
-firstName = 'John';
-age = 35;
-hobby = 'Coding';
+const firstName = 'John';
+const age = 35;
+//declared hobby as a constant
+const hobby = 'Coding';
 
-const logTwice = () => {
-    
-  console(parameter)
-  console(parameter)
+const logTwice = (parameter) => {
+ //fixed console logging
+  console.log(parameter)
+  console.log(parameter)
 }
-
-function hobby () {
+//changed function name into myHobby to avoid hoisting or function overloading
+function myHobby () {
   logTwice(`Hello, ${firstName} (${age}). I love ${hobby}!`)
 }
 
-hobby()
+myHobby()
+

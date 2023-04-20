@@ -53,7 +53,7 @@ const futureId = 9;
 // Do not change code above this comment
 
 //checks whether item has been assigned to 9 and display message
-console.log(holidays[futureId] ? holidays[futureId].name : 'ID ${futureId} not created yet')
+console.log(holidays[futureId] ||'ID ${futureId} not created yet')
 
 //Make a copy of Christmas
  let copied = {...holidays[christmas]};
