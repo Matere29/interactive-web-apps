@@ -10,11 +10,18 @@ const array = [];
 const message1 = 'Number selected matches, you WON!!!!!!'
 const message2 = 'No matches, You LOST!!!!!!'
 let number = prompt("Enter number between 1 and 45");
-if (number<1 || number>49)
+
+//Checks if input is between 1 and 45
+if(number !== "" && !isNaN(number) && number>=1 && number<=45) {
+    //alert("Number selection must be made")
+    //number = prompt("Enter number between 1 and 45");
+}
+else 
 {
-    alert("Number must be between 1 and 45");
+    alert("Input is not a valid number");
     number = prompt("Enter number between 1 and 45");
 }
+
 document.getElementById("number").innerHTML = number;
 
 
