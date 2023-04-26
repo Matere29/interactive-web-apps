@@ -1,45 +1,52 @@
 const data = {
-	lists: [
-	  ['first', [15, 11, 13, 7, 5]],
-	  ['second', [2, 6, 8, 4, 14, 12, 10]],
-	  ['third', [9, 3, 1]],
-	]
-  };
-  
-  const result = [];
+  lists: [
+    ['first', [15, 11, 13, 7, 5]],
+    ['second', [2, 6, 8, 4, 14, 12, 10]],
+    ['third', [9, 3, 1]],
+  ]
+}
 
-  function extractBiggest() {
-    let biggest = null;
-    let index = null;
-    for (let i = 0; i < data.lists.length; i++) {
-      const list = data.lists[i][1];
-      const lastItem = list[list.length - 1];
-      if (biggest === null || lastItem > biggest) {
-        biggest = lastItem;
-        index = i;
-      }
-    }
-    if (index !== null) {
-      result.push(biggest);
-      data.lists[index][1].pop();
-    }
+// Only edit below
+//changed assignments of below to use correct array index
+//distructured array
+const first = data.lists[0][1] 
+const second = data.lists[1][1] 
+const third = data.lists[2][1] 
+//const[first, second, third] = data.
+//Changed logic of extractBiggest function
+const extractBiggest = () => {
+  if (first[first.length - 1] > second[second.length - 1]) {
+    return first.pop()
   }
-  
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  result.push(extractBiggest())
-  console.log(result.flat());
+
+  if (second[second.length - 1] > third[third.length - 1]) {
+    return second.pop()
+  }
+
+  return third.pop()
+}
+
+// Only edit above
+
+const result = []
+
+result.push(extractBiggest())
+result.push(extractBiggest())
+result.push(extractBiggest())
+result.push(extractBiggest())
+result.push(extractBiggest())
+
+result.push(extractBiggest())
+result.push(extractBiggest())
+result.push(extractBiggest())
+result.push(extractBiggest())
+result.push(extractBiggest())
+
+result.push(extractBiggest())
+result.push(extractBiggest())
+result.push(extractBiggest())
+result.push(extractBiggest())
+result.push(extractBiggest())
+
+
+console.log(result)

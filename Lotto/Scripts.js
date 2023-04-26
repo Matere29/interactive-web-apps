@@ -11,10 +11,9 @@ const message1 = 'Number selected matches, you WON!!!!!!'
 const message2 = 'No matches, You LOST!!!!!!'
 let number = prompt("Enter number between 1 and 45");
 
-//Checks if input is between 1 and 45
+//Checks if input is between 1 and 45, if input is not an empty string and if it is not a string
 if(number !== "" && !isNaN(number) && number>=1 && number<=45) {
-    //alert("Number selection must be made")
-    //number = prompt("Enter number between 1 and 45");
+    
 }
 else 
 {
@@ -26,7 +25,7 @@ document.getElementById("number").innerHTML = number;
 
 
 for (let x = 0; x < 6; x++)
-array.push((Math.random() * 45).toFixed(0));
+array.push(Math.floor(Math.random() * 45));
 document.getElementById("Lotto").innerHTML = array;
 
 if(array.includes(number)){
